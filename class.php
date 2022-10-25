@@ -5,7 +5,7 @@ class Movies
     public $genre;
     public $year;
     public $director;
-    public $vote;
+    private $vote;
     public function __construct($title, $genre, $year, $director)
     {
         $this->title = $title;
@@ -16,6 +16,10 @@ class Movies
     public function setVote($vote)
     {
         $this->vote = $vote;
+    }
+    public function getvote()
+    {
+        return $this->vote;
     }
     public function __set($nome, $value)
     {

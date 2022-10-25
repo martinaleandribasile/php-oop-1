@@ -19,7 +19,7 @@
                 <p>DIRECTOR BY <?= $element->director ?> </p>
                 <p> GENRE: <?= $element->genre ?> </p>
                 <p> RELEASE DATE: <?= $element->year ?> </p>
-                <p>VOTE <?= $element->vote ?> </p>
+                <p>VOTE <?= $element->getvote() ?> </p>
             </div>
         <?php endforeach ?>
     </div>
